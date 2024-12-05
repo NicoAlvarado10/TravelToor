@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/poppins':
+    specifier: ^5.1.0
+    version: 5.1.0
   astro:
     specifier: ^5.0.3
     version: 5.0.3(typescript@5.7.2)
+  remixicon:
+    specifier: ^4.5.0
+    version: 4.5.0
 
 packages:
 
@@ -523,6 +529,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/poppins@5.1.0:
+    resolution: {integrity: sha512-tpLXlnNi2fwQjiipvuj4uNFHCdoLA8izRsKdoexZuEzjx0r/g1aKLf4ta6lFgF7L+/+AFdmaXFlUwwvmDzYH+g==}
+    dev: false
 
   /@img/sharp-darwin-arm64@0.33.5:
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2385,6 +2395,10 @@ packages:
       '@types/mdast': 4.0.4
       mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
+    dev: false
+
+  /remixicon@4.5.0:
+    resolution: {integrity: sha512-IP/wNQGG3JCigaeFF3DERSTqMIZBlNu1yu8clNGB7wFe7ZN/ueKMplFHL5uEbnGpCzqfY6MlxIYn2vRzub+5cQ==}
     dev: false
 
   /retext-latin@4.0.0:
