@@ -1,0 +1,98 @@
+
+<section class="hero">
+    <div class="hero__text">
+        <h1 class="hero__title"><span>Let's</span>Create Memorable Journey</h1>
+        <p class="hero__paragraph">Embark on an unforgettable adventure with us! Discover breathtaking destinations, create lasting memories, and make every journey remarkable.</p>
+        <form action="/">
+        <div>
+            <label for="#">Location</label>
+            <input type="text" placeholder="Lakshadweep">
+        </div>
+        <div>
+            <label for="#">Date</label>
+            <input type="text" placeholder="26 Mar, Fri">
+        </div>
+        <div>
+            <label for="#">Price</label>
+            <input type="text" placeholder="Rs. 42,000">
+        </div>
+        <div>
+            <button><i class="ri-search-line"></i></button>
+        </div>
+    </form>
+    </div>
+    <div class="hero__images">
+        <img class="hero__img" src="/header-1.webp" alt="header-img">
+        <img class="hero__img" src="/header-3.webp" alt="header-img">
+        <img class="hero__img" src="/header-2.webp" alt="header-img">
+    </div>
+</section>
+
+<style>
+.hero{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+.hero__images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    
+}
+.hero__img{
+    width: 80%; 
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    object-fit: cover;
+}
+.hero__text{
+    padding-top: 5rem;
+}
+.hero__title{
+    font-size: 4.5rem;
+    color: var(--text-dark);
+}
+.hero__title span{
+    text-decoration: underline var(--primary-color);
+}
+.hero__paragraph{
+    color: var(--text-light);
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    text-wrap: balance;
+}
+.hero form{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    margin: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.hero form label{
+    color: var(--text-dark);
+    font-weight: 600;
+}
+.hero form input{
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+}
+.hero form button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem ;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+</style>
