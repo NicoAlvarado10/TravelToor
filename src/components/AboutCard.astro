@@ -1,0 +1,35 @@
+---
+const {title, descp, icon} = Astro.props;
+---
+<article class="about__card">
+    <span><i class={icon}></i></span>
+    <div class="about__descp">
+        <h3>{title}</h3>
+        <p>{descp}</p>
+    </div>
+</article>
+
+<style>
+.about__card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+.about__descp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.about__descp h3{
+    font-size: 1.2rem;
+}
+.about__card i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.about__descp p{
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+</style>

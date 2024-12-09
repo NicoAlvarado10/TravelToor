@@ -1,0 +1,64 @@
+---
+import AboutCard from "../components/AboutCard.astro"
+---
+<section class="about">
+    <div><img class="about__img" src="/choose.webp" alt="about-img"></div>
+    <div class="about__text">
+        <span class="about__subtitle">Why Choose Us? </span>
+        <h2 class="about__title">Plan Your Trip <span>With Us<span></h2>
+          <div class="about__grid">
+            <AboutCard
+                icon="ri-verified-badge-fill"
+                title="Best Price Gurantee"
+                descp="We ensure you get the most competitive rates for your travel plans, making your dream destinations affordable"           
+                />
+                <AboutCard
+                icon="ri-calendar-fill"
+                title="Booking Options"
+                descp="Experience the ease of flexible booking options tailored to suit your schedule and preferences."           
+                />
+                <AboutCard
+                icon="ri-road-map-fill"
+                title="Revising Track Map"
+                descp="Navigate your adventure with our personalized track maps designed for seamless and enjoyable travel experiences."           
+                />
+          </div>
+    </div>
+</section>
+
+<style>
+    .about{
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,500px);
+        justify-content: center;
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+    .about__img{
+        width: 90%;
+        box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+    }
+    .about__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about__title{
+        font-size: 2.5rem;
+        color: var(--text-dark);
+        
+        font-weight: 600;
+        line-height: 2;
+    }
+    .about__title span{
+        color: var(--primary-color);
+    }
+    .about__subtitle{
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+</style>
