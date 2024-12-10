@@ -1,0 +1,64 @@
+---
+const {img, alt, rating, name, price, days, persons, location} = Astro.props
+---
+<article class="package__card">
+    <img class="package__img" src={img} alt={alt}>
+    <div class="package__title">
+        <h3>{name}</h3>
+        <span>{rating}</span>
+    </div>
+    <div class="package__price">
+        <span>{price}</span>
+        Per Person
+    </div>
+    <div class="package__descp">
+        <span><i class="ri-time-line"></i> {days}</span>
+        <span><i class="ri-group-3-fill"></i> {persons}</span>
+        <span><i class="ri-map-pin-2-fill"></i> {location}</span>
+    </div>
+</article>
+
+<style>
+    .package__card{
+        border-radius: 2rem;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        border-radius: 3rem;
+    }
+    .package__img{
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+    .package__title{
+        padding:1rem 2rem ;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .package__title h3{
+        font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    }
+    .package__title span{
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
+    .package__price{
+        padding:0 2rem ;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .package__price span{
+        color: var(--primary-color);
+
+    }
+    .package__descp{
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--text-light);
+        font-size: 1.1rem;
+    }
+</style>

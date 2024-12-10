@@ -1,0 +1,68 @@
+---
+import PackagesCard from "../components/PackagesCard.astro";
+---
+
+<section class="package">
+ <span class="package__subtitle">Famous Destinations</span>
+ <h2 class="package__title">Our Popular <span>Destinations</span></h2>
+    <div class="package__grid">
+        <PackagesCard
+            img="/popular-1.webp"
+            alt="Lakshadweep image"
+            rating="⭐ 4.0(43) 😊"
+            name="Lakshadweep"
+            price="Rs.28,000/ -"
+            days="4 Day's"
+            persons="15+"
+            location="India"
+        />
+        <PackagesCard
+            img="/popular-2.webp"
+            alt="Lakshadweep image"
+            rating="⭐ 4.0(43) 😊"
+            name="Lakshadweep"
+            price="Rs.15,000/ -"
+            days="2 Day's"
+            persons="10+"
+            location="India"
+        />
+        <PackagesCard
+            img="/popular-3.webp"
+            alt="Sun Temple image"
+            rating="⭐ 4.2(45) 😊"
+            name="Sun Temple"
+            price="Rs.18,000/ -"
+            days="3 Day's"
+            persons="20+"
+            location="India"
+        />
+    </div>   
+</section>
+
+<style>
+    .package{
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    .package__title{
+        font-size: 2.5rem; 
+        color: var(--text-dark);
+        margin: 1rem 0;
+    }
+    .package__subtitle{
+        color: var(--primary-color);
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .package__title span{
+        color: var(--primary-color);
+    }
+    .package__grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+</style>
