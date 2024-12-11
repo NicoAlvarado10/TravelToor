@@ -1,0 +1,94 @@
+---
+
+---
+<section class="explore">
+    <div class="explore__texts">
+
+        <span class="explore__subtitle">Explore With Us</span>
+        <h2 class="explore__title">Choose Dream Destinations For <span>Explore World</span>
+        </h2>
+        <p class="explore__paragraph">Discover a world of wonders! Select from our curated list of dream destinations and start your journey to explore breathtaking landscapes, vibrant cultures, and unforgettable experiences.</p>
+        <a class="explore__btn" href="#">About Us</a>
+        <div class="explore__grid">
+            <article>
+                <span>14</span>
+                <p>Years <br>Experience</p>
+            </article>
+            <article>
+                <span>67+</span>
+                <p>Destinations <br>Celebrations</p>
+            </article>
+            <article>
+                <span>320+</span>
+                <p>Happy <br>Customers</p>
+            </article>
+        </div>
+    </div>
+    <div>
+        <img class="explore__img" src="/explore.webp" alt="explore image">
+    </div>
+</section>
+
+<style>
+    .explore{
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 5rem 0;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .explore__subtitle{
+        color: var(--primary-color);
+        font-size: 1.2rem;
+
+    }
+    .explore__title{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        color: var(--text-dark);
+    }
+    .explore__title span{
+        color: var(--primary-color);
+    }
+    .explore__paragraph{
+        color: var(--text-light);
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+    }
+    .explore__btn{
+        padding: 0.8rem 1.5rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 1rem;
+        font-size: 1.1rem;
+    }
+    .explore__grid{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 4rem;
+        
+    }
+    .explore__grid article{
+        display: flex ;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .explore__grid article p{
+        color: var(--text-light);
+        font-size: 1.1rem;
+    }
+    .explore__grid article span{
+        font-size: 3.5rem;
+        color: var(--text-dark);
+    }
+    .explore__img{
+        box-shadow: -30px -30px 0px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        border-radius: 2rem;
+    }
+</style>
