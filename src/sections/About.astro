@@ -61,4 +61,22 @@ import AboutCard from "../components/AboutCard.astro"
         font-size: 1.2rem;
         font-weight: 500;
     }
+
+    @media (max-width:768px ){
+        .about{
+            grid-template-columns: 1fr;
+        }
+        .about__title, .about__subtitle{
+            padding-left: 1rem;
+        }
+        .about__img{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        }
+        .about__grid{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
 </style>
