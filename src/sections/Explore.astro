@@ -91,4 +91,21 @@
         max-width: 500px;
         border-radius: 2rem;
     }
+
+    @media (max-width:768px ){
+        .explore{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .explore__img{
+            width: 70%;
+            display: flex;
+        }
+        .explore__title, .explore__subtitle, .explore__paragraph, .explore__grid{
+            padding: 0 1rem;
+        }
+        .explore__btn{
+            margin-left: 1rem;
+        }
+    }
 </style>
