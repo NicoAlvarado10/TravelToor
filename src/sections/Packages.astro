@@ -65,4 +65,12 @@ import PackagesCard from "../components/PackagesCard.astro";
         gap: 2rem;
         margin-top: 4rem;
     }
+    @media (max-width:768px ){
+        .package__grid{
+            flex-direction: column;
+        }
+        .package__subtitle, .package__title{
+            padding-left: 1rem;
+        }
+    }
 </style>
