@@ -1,0 +1,119 @@
+<footer class="footer">
+    <div class="footer__grid">
+        <div class="footer__card">
+            <h2>TravelToor</h2>
+            <p>Explore the world with us! Connect through our social media channels, find quick links to essential resources, and access 24/7 support to make your travel planning effortless.</p>
+            <ul class="footer__redes">
+                <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__card">
+            <h3>Services</h3>
+            <ul class="footer__links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="footer__card">
+            <h3>Instagram</h3>
+            <div class="footer__images">
+                <img src="/instagram-1.webp" alt="instagram image">
+                <img src="/instagram-2.webp" alt="instagram image">
+                <img src="/instagram-3.webp" alt="instagram image">
+                <img src="/instagram-4.webp" alt="instagram image">
+                <img src="/instagram-5.webp" alt="instagram image">
+                <img src="/instagram-6.webp" alt="instagram image">
+            </div>
+        </div>
+        <div class="footer__card">
+            <h3>Contact</h3>
+            <ul class="footer__contact">
+                <li><a href="#"><i class="ri-phone-fill"></i>+91 0987654321</a></li>
+                <li><a href="#"><i class="ri-map-pin-fill"></i>New Delhi, India</a></li>
+                <li><a href="#"><i class="ri-mail-fill"></i>info@carrental</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer__copyright">Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+</footer>
+
+<style>
+    .footer{
+        padding-top: 5rem;
+        color: var(--white);
+        background-color: var(--primary-color);
+    }
+    .footer__grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        max-width: var(--max-width);
+        margin: 0 auto;
+        gap: 1.5rem;
+    }
+    .footer__copyright{
+        text-align: center;
+        color: var(--white);
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    .footer__images{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .footer__images img{
+        border-radius: 10px;
+        width: 90%;
+    }
+    .footer__card{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer__card h3{
+        font-size: 1.2rem;
+    }
+    .footer__redes{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .footer__redes a{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 100%;
+        background-color: var(--white);
+        color: var(--text-dark);
+        transition: 0.3s;
+    }
+    .footer__redes a:hover{
+        background-color: var(--primary-color-dark);
+        color: var(--white);
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .footer__links a{
+        color: var(--white);
+    }
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer__contact a{
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+</style>
