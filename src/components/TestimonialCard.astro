@@ -46,5 +46,14 @@ const {img, alt, name, profession, testimony} = Astro.props
         height: auto;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
+        width: 100%;
+    }
+
+    @media (max-width:1020px ){
+        .testimonial__card{
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 </style>

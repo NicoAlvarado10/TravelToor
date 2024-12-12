@@ -52,5 +52,11 @@ import TestimonialCard from "../components/TestimonialCard.astro";
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
         margin-top: 3rem;
+        padding: 0 2rem;
+    }
+    @media (max-width:768px ){
+        .testimonial__grid{
+            grid-template-columns: 1fr;
+        }
     }
 </style>
