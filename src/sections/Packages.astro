@@ -67,10 +67,18 @@ import PackagesCard from "../components/PackagesCard.astro";
     }
     @media (max-width:768px ){
         .package__grid{
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 0 2rem;
         }
         .package__subtitle, .package__title{
             padding-left: 1rem;
+        }
+        
+    }
+    @media (max-width:540px ){
+        .package__grid{
+            grid-template-columns: 1fr;
         }
     }
 </style>
