@@ -1,0 +1,56 @@
+---
+import TestimonialCard from "../components/TestimonialCard.astro";
+---
+
+<section class="testimonial">
+    <span class="testimonial__subtitle">What Our Client Say's?</span>
+    <h2 class="testimonial__title">Client <span>Testimonials</span></h2>
+    <div class="testimonial__grid">
+        <TestimonialCard
+            img="/client-1.webp"
+            alt="client-1 image"
+            name="Emma Johnson"
+            profession="Travel Blogger"
+            testimony="This travel platform turned my bucket list dreams into reality! The booking process was seamless, and their team provided excellent guidance on must-visit spots. Every step felt effortless, and I can't wait to plan my next adventure with them. Highly recommended!"
+        />
+        <TestimonialCard
+            img="/client-2.webp"
+            alt="client-2 image"
+            name="Sophia Lee"
+            profession="Software Engineer"
+            testimony="Traveling with this service was a delight! The flexible booking options gave me the freedom to plan at my own pace, and the detailed itineraries ensured I didn't miss anything important. I felt like they genuinely cared about creating the perfect travel experience for me. Absolutely wonderful!"
+        />
+        <TestimonialCard
+            img="/client-3.webp"
+            alt="client-3 image"
+            name="Michael Roberts"
+            profession="Photographer"
+            testimony="As a photographer, finding picturesque locations is key, and this platform exceeded my expectations. They not only made booking easy but also helped me discover some incredible hidden gems. Their attention to detail made my journey unforgettable and hassle-free!"
+        />
+    </div>
+</section>
+
+<style>
+    .testimonial{
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    .testimonial__subtitle{
+        color:var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .testimonial__title{
+        font-size: 2.5rem ;
+        margin: 1rem 0;
+    }
+    .testimonial__title span{
+        color: var(--primary-color);
+    }
+    .testimonial__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+</style>
