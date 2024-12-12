@@ -95,4 +95,23 @@
     border-radius: 1rem;
     font-size: 1.5rem;
 }
+
+@media (max-width:768px ){
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .hero__title{
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .hero__paragraph{
+        text-align: center;
+    }
+    .hero form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        margin: 0 1rem;
+    }
+}
 </style>
