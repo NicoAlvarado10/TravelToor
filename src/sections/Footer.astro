@@ -75,6 +75,10 @@
         flex-direction: column;
         gap: 1rem;
     }
+    .footer__card p{
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
     .footer__card h3{
         font-size: 1.2rem;
     }
@@ -115,5 +119,19 @@
         align-items: center;
         gap: 1rem;
         font-size: 1.1rem;
+    }
+    
+    @media (max-width:768px ){
+        .footer__grid{
+            grid-template-columns: repeat(2,1fr);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            gap: 3rem;
+        }
+    }
+    @media (max-width:540px ){
+        .footer__grid{
+            grid-template-columns: 1fr;
+        }
     }
 </style>
