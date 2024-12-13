@@ -1,5 +1,5 @@
 
-<section class="hero">
+<section class="hero" id="inicio">
     <div class="hero__text">
         <h1 class="hero__title"><span>Let's</span>Create Memorable Journey</h1>
         <p class="hero__paragraph">Embark on an unforgettable adventure with us! Discover breathtaking destinations, create lasting memories, and make every journey remarkable.</p>
@@ -86,6 +86,7 @@
     color: var(--text-light);
     font-size: 1rem;
     margin-top: 1rem;
+
     
 }
 .hero form button{
@@ -109,9 +110,12 @@
     }
     .hero form{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
         gap: 1rem;
         margin: 0 1rem;
+    }
+    .hero form button{
+        width: 100%;
     }
 }
 @media (max-width:540px ){
@@ -124,6 +128,13 @@
     }
     .hero__title{
         font-size: 3rem;
+    }
+    .hero form{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hero__paragraph{
+        font-size: 1rem;
     }
 }
 </style>

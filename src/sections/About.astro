@@ -1,7 +1,7 @@
 ---
 import AboutCard from "../components/AboutCard.astro"
 ---
-<section class="about">
+<section class="about" id="about">
     <div><img class="about__img" src="/choose.webp" alt="about-img"></div>
     <div class="about__text">
         <span class="about__subtitle">Why Choose Us? </span>
@@ -68,6 +68,7 @@ import AboutCard from "../components/AboutCard.astro"
         }
         .about__title, .about__subtitle{
             padding-left: 1rem;
+            text-wrap: balance;
         }
         .about__img{
         width: 70%;

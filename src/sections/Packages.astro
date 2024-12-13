@@ -2,7 +2,7 @@
 import PackagesCard from "../components/PackagesCard.astro";
 ---
 
-<section class="package">
+<section class="package" id="package">
  <span class="package__subtitle">Famous Destinations</span>
  <h2 class="package__title">Our Popular <span>Destinations</span></h2>
     <div class="package__grid">
@@ -76,7 +76,7 @@ import PackagesCard from "../components/PackagesCard.astro";
         }
         
     }
-    @media (max-width:540px ){
+    @media (max-width:640px ){
         .package__grid{
             grid-template-columns: 1fr;
         }
